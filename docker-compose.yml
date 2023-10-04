@@ -22,6 +22,8 @@ services:
       - db
     networks:
       - default-network
+    volumes:
+      - ./node:/app
 
   db:
     platform: linux/x86_64
